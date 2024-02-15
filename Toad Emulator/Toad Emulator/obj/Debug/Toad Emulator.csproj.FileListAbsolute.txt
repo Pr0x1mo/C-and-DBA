@@ -1,0 +1,27 @@
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Toad Emulator.exe.config
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Toad Emulator.exe
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Toad Emulator.pdb
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Buffers.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Memory.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Text.Json.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.ValueTuple.dll
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Buffers.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Memory.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Text.Json.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\System.ValueTuple.xml
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\obj\Debug\Toad Emulator.csproj.AssemblyReference.cache
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\obj\Debug\Toad Emulator.csproj.CoreCompileInputs.cache
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\obj\Debug\Toad Emulator.csproj.CopyComplete
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\obj\Debug\Toad Emulator.exe
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\obj\Debug\Toad Emulator.pdb
+C:\Users\XavierBorja\source\repos\Toad Emulator\Toad Emulator\bin\Debug\Oracle.DataAccess.dll
