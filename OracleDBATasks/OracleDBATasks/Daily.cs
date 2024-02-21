@@ -19,19 +19,19 @@ namespace OracleDBATasks
     {
         public static Dictionary<string, string> connectionStrings = new Dictionary<string, string>
     {
-        { "ASTPRD", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=xborja;Password=Seraphim24$" },
-        { "ASTDEV", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.11)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdev_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=Seraphim24$" },
-        { "ASTDEMO", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.15)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdemo_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=Seraphim24$" },
-        { "ASTSIT", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.14)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astsit_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=Seraphim24$" }//,
-        //{ "CTXRPT", "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.82)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ctxrpt_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=system;Password=ctXU4ea4u" }
+        { "ASTPRD", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=xborja;Password=pw" },
+        { "ASTDEV", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.11)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdev_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=pw" },
+        { "ASTDEMO", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.15)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdemo_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=pw" },
+        { "ASTSIT", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.14)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astsit_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=xborja;Password=pw" }//,
+        //{ "CTXRPT", "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.82)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ctxrpt_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=system;Password=pw" }
     };
 
         public static Dictionary<string, string> connectionStrings_sys = new Dictionary<string, string>
     {
-        { "ASTPRD", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=system;Password=ctXU4ea4u;DBA Privilege=SYSDBA;" },
-        { "ASTDEV", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.11)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdev_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=ctXU4ea4u;DBA Privilege=SYSDBA;" },
-        { "ASTDEMO", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.15)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdemo_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=ctXU4ea4u;DBA Privilege=SYSDBA;" },
-        { "ASTSIT", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.14)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astsit_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=ctXU4ea4u;DBA Privilege=SYSDBA;" }
+        { "ASTPRD", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=system;Password=pw;DBA Privilege=SYSDBA;" },
+        { "ASTDEV", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.11)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdev_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=pw;DBA Privilege=SYSDBA;" },
+        { "ASTDEMO", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.15)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astdemo_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=pw;DBA Privilege=SYSDBA;" },
+        { "ASTSIT", "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.14)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astsit_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com)));User Id=system;Password=pw;DBA Privilege=SYSDBA;" }
      };
         static void Main(string[] args)
         {
