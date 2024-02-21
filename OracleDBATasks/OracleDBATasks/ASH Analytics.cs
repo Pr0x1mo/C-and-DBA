@@ -23,7 +23,7 @@ namespace OracleDBATasks
         {
 
            
-            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=xborja;Password=Seraphim24$";
+            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.1.213)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=astprd_pdb1.prodprisubphx.consortiexpxvcn.oraclevcn.com)));User Id=userid;Password=pw";
             
             string query = @"select TO_CHAR(TRUNC(sample_time, 'HH'), 'MM/DD/YYYY') AS date_time,                    
                    to_char(trunc((sample_time),'HH'),'HH24:MI') as time, 
