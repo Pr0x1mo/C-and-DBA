@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Database credentials and connection string
+DB_USER="your_db_username"
+DB_PASS="your_db_password"
+DB_CONN="//10.0.2.11:1521/astdev_pdb1.nonprodprisub.consortiexvcn.oraclevcn.com"
+TABLE_NAME="XBORJA.EDI_COUNT"  # The target table for inserting counts
+
+# Function to count XML files and insert counts into the database
+count_xml_files() {
+    # Base directory to search for XML files and number of hours to look back
+    local base_directory="$1"
+    local hours="$2"
+    # Timestamp for when the count was taken
+    count_ts=$(date +'%Y-%m-%d %H:%M')
+
+    # Calculate the earliest time to consider files based on the provided hours
+    local earliest_modification_time=$(date -d "$hours hours ago" "+%Y-%m-%d %H:%M")
+
+    # Array to store directories modified within the specified time frame
+    local date_directories=()
+    # Find and store eligible directories, excluding 'history'
+    while IFS= read -r directory; do
+        date_directories+=("$directory")
+    done < <(find "$base_directory" -mindepth 1 -maxdepth 1 -type d ! -path "*/history" -newermt "$earliest_modification_time")
+
+    # Associative array for vendor counts and a total count variable
+    declare -A vendor_counts
+    declare -i total_counts=0
+
+    # Loop through each found directory
+    for directory in "${date_directories[@]}"; do
+        # Find XML files within the time frame
+        xml_files=$(find "$directory" -type f -name '*.xml' -newermt "$earliest_modification_time")
+
+        # Count files for each vendor
+        while IFS= read -r file; do
+            # Extract vendor name from the directory structure
+            vendor_name=$(basename "$(dirname "$file")")
+            # Increment counts
+            ((vendor_counts[$vendor_name]++))
+            ((total_counts++))
+        done <<< "$xml_files"
+    done
+
+    # Insert counts into the database for each vendor
+    for vendor in "${!vendor_counts[@]}"; do
+        # SQL command for inserting the data
+        sql="INSERT INTO ${TABLE_NAME} (VENDOR_NAME, FILE_COUNT, COUNT_TIMESTAMP) VALUES ('${vendor}', ${vendor_counts[$vendor]}, TO_DATE('${count_ts}','YYYY-MM-DD HH24:MI'));"
+        # Execute the SQL command using sqlplus
+        echo "$sql" | sqlplus -s "${DB_USER}/${DB_PASS}@${DB_CONN}"
+    done
+}
+
+# Check if the script was called with the correct number of arguments
+if [ $# -ne 1 ]; then
+    # If not, display an error message with the correct usage
+    echo "ERROR - no hours given. Usage: $0 <hours>"
+    exit 1
+fi
+
+# Directory containing the XML files to count
+XML_DIR="/apps/xmls/success"
+# Call the function to count XML files and insert the data into the database
+count_xml_files $XML_DIR $1
+
+# Exit the script successfully
+exit 0
